@@ -8,6 +8,10 @@ export default function Map(): ReactElement {
     const [coordinate , setCoordinate] = useState<[number, number]>([0, 0]);
     const [center, setCenter] = useState<[number, number]>([-33.4528512, -70.7002368]);
 
+    /**
+     * Función que genera una ubicación aleatoria en Santiago de Chile
+     * @returns arreglo con latitud y longitud aleatorias
+     */
     function getRandomLocationInSantiago() : [number, number] {
         // Rango aproximado de latitud y longitud para la Región Metropolitana de Santiago
         const latMin = -33.65;

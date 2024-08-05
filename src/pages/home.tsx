@@ -126,6 +126,11 @@ export default function Home() {
         fetchData();
     }, []);
 
+    /**
+     * Función que obtiene los datos de los autos
+     * @returns array
+     * @throws error si no se pueden obtener los datos
+     * */
     async function fetchData() {
         try {
             setLoading(true);
